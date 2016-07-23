@@ -33,7 +33,7 @@ public class InfUtils {
 		
 		ServerResponse response = HttpUtils.synPost(url, formParam);
 		if (response.isSuccess()) {
-			String jsonString = response.getContent();
+			String jsonString = (String)response.getContent();
 			res = JSON.parseObject(jsonString);
 		}
 		return res;
