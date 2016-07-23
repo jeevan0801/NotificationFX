@@ -19,4 +19,21 @@ public class Constants {
 	public static final int RES_CODE_DEFAULT = 999;
 	public static final String RES_MESSAGE_DEFAULT = "the error from Server";
 	
+	public static final String RES_TRAYICON_DISPLAY = "NotificationAPP";
+	public static final String RES_TRAYICON_SHOW = "SHOW";
+	public static final String RES_TRAYICON_HIDE = "HIDE";
+	public static final String RES_TRAYICON_EXIT = "EXIT";
+	
+	
+	public static final String RES_MESSAGE_LOGIN_SUCCESS = "登录成功";
+	public static final String RES_MESSAGE_COL_UPDATETIME = "更新时间";
+	public static final String RES_MESSAGE_COL_TITLE = "消息标题";
+	
+	
+	public static final String RES_STAGE_TITLE_LOGIN = "登录";
+	public static final String RES_STAGE_TITLE_MESSAGE = "消息";
+	
+	
+	
+	
 }
