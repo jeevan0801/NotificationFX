@@ -9,7 +9,7 @@ public class ServerResponse {
 	private boolean isSuccess;
 	private int code;
 	private String message;
-	private String content;
+	private Object content;
 	
 	public int getCode() {
 		return code;
@@ -30,10 +30,10 @@ public class ServerResponse {
 	public void setSuccess(boolean isSuccess) {
 		this.isSuccess = isSuccess;
 	}
-	public String getContent() {
+	public Object getContent() {
 		return content;
 	}
-	public void setContent(String content) {
+	public void setContent(Object content) {
 		this.content = content;
 	}
 	

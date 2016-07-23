@@ -1,6 +1,8 @@
 package application.util.base;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
@@ -83,6 +85,17 @@ public class HttpUtils {
 			e.printStackTrace();
 		}
 		return rs;
+	}
+	
+	
+	// 打开url 在系统默认浏览器中
+	public static void openUrlByBrowser(String url) {
+		try {
+			Desktop.getDesktop().browse(new URI(url));
+		} catch (Exception e1) {
+			System.err.println("openUrlByBrowser error: "+ url);
+			e1.printStackTrace();
+		}
 	}
 	
 }

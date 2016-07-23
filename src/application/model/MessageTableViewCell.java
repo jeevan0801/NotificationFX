@@ -1,8 +1,6 @@
 package application.model;
 
-import java.awt.Desktop;
-import java.net.URI;
-
+import application.util.base.HttpUtils;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Hyperlink;
 
@@ -15,12 +13,7 @@ public class MessageTableViewCell {
 		this.message = new Hyperlink(msgObj.getTitle());
 		
 		message.setOnAction((ActionEvent e) -> {
-			try {
-				Desktop.getDesktop().browse(new URI(msgObj.getUrl()));
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+			HttpUtils.openUrlByBrowser(msgObj.getUrl());
 		});
 	}
 
